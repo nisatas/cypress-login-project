@@ -1,16 +1,27 @@
-# React + Vite
+# Cypress Login Form E2E Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React ile oluşturulmuş bir login formunun Cypress kullanılarak uçtan uca (E2E) test edilmesini amaçlamaktadır.
 
-Currently, two official plugins are available:
+## 🚀 Proje Özellikleri
+- React + Vite ile oluşturulmuş login formu
+- Email, şifre ve KVKK/GDPR onayı validasyonları
+- Tüm validasyonlar geçerli olmadan submit butonu aktif olmaz
+- Başarılı giriş sonrası Success sayfasına yönlendirme
+- Cypress ile E2E testler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Cypress Test Senaryoları
+- ✅ Başarılı form doldurulduğunda submit edilebilmesi
+- ❌ Geçersiz email girildiğinde hata mesajı gösterilmesi
+- ❌ Email ve password hatalıyken birden fazla hata mesajı gösterilmesi
+- ❌ Şartlar kabul edilmeden submit butonunun disabled olması
 
-## React Compiler
+## 🛠 Kullanılan Teknolojiler
+- React
+- Vite
+- React Router DOM
+- Cypress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ▶️ Projeyi Çalıştırma
+```bash
+npm install
+npm run dev
